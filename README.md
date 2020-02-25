@@ -6,7 +6,13 @@ economical way to generate all your unique pass URLs, that already contain the e
 
 The tool is quite fast - it generated over 600,000 links in less than 7 seconds on a Dual Core MacBook Pro with 16GB RAM.
 
-_Important: please note that the generated links will only work if you project is set public (figure 1). For private projects you can only create passes via the API or Admin Portal._
+## Important: 
+* please note that the generated links will only work if you project is set public (figure 1). For private projects you can only create passes via the API or Admin Portal.
+* this tool is for the latest PassKit v4 platform: https://app.passkit.com. The tool does not working with older versions of PassKit (Cherry Pie, and the v2/v3 API's).
+
+## Prerequisites:
+* a PassKit account. Sign up for free at: https://app.passkit.com
+* a project setup in your PassKit account.
 
 ## How to use (TDLR):
 * Either compile (`go build src/main.go`) yourself or download any of the pre-compiled executables from the `bin` folder (you may need to `chmod 755` to run it).
