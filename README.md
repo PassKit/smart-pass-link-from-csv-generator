@@ -1,5 +1,5 @@
 # encrypted-link-generator
-Basic CSV parser that generates encrypted PassKit links from a CSV, which can then be distributed to your customers via your preferred channel. Takes an input file, output destination, base URL and encryption key.
+Basic CSV parser that generates encrypted PassKit Smart Links from a CSV, which can then be distributed to your customers via your preferred channels. Takes an input file, output destination, base URL and encryption key.
 
 Generating links is free. A pass record is only created once someone clicks on the link; so this is a very
 economical way to generate all your unique pass URLs, that already contain the encrypted pass data, and distribute them to your customers.
