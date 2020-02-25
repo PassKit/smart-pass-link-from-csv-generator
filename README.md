@@ -14,7 +14,7 @@ The tool is quite fast - it generated over 600,000 links in less than 7 seconds 
 * a PassKit account. Sign up for free at: https://app.passkit.com
 * a project setup in your PassKit account.
 
-## How to use (TDLR):
+## How to use:
 * Either compile (`go build src/main.go`) yourself or download any of the pre-compiled executables from the `bin` folder (you may need to `chmod 755` to run it).
 * Get your key for your project from the PassKit portal: https://app.passkit.com. You can find the key in your Project Distribution Settings page (figure 2).
 * Get your landing page url from your Project Distribution Settings page (figure 3).
