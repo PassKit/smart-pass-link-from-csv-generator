@@ -1,14 +1,20 @@
 # encrypted-link-generator
-Basic CSV parser that generates encrypted PassKit links from a CSV, which can then be distributed to your customers via your preferred channel. Takes an input file, output destination, base URL and encryption key.
+Basic CSV parser that generates encrypted PassKit Smart Links from a CSV, which can then be distributed to your customers via your preferred channels. Takes an input file, output destination, base URL and encryption key.
 
 Generating links is free. A pass record is only created once someone clicks on the link; so this is a very
 economical way to generate all your unique pass URLs, that already contain the encrypted pass data, and distribute them to your customers.
 
 The tool is quite fast - it generated over 600,000 links in less than 7 seconds on a Dual Core MacBook Pro with 16GB RAM.
 
-_Important: please note that the generated links will only work if you project is set private (figure 1). 
+## Important: 
+* please note that the generated links will only work if you project is set to private (figure 1).
+* this tool is for the latest PassKit v4 platform: https://app.passkit.com. The tool does not working with older versions of PassKit (Cherry Pie, and the v2/v3 API's).
 
-## How to use (TDLR):
+## Prerequisites:
+* a PassKit account. Sign up for free at: https://app.passkit.com
+* a project setup in your PassKit account.
+
+## How to use:
 * Either compile (`go build src/main.go`) yourself or download any of the pre-compiled executables from the `bin` folder (you may need to `chmod 755` to run it).
 * Get your key for your project from the PassKit portal: https://app.passkit.com. You can find the key in your Project Distribution Settings page (figure 2).
 * Get your landing page url from your Project Distribution Settings page (figure 3).
