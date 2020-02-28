@@ -6,7 +6,7 @@ economical way to generate all your unique pass URLs, that already contain the e
 
 The tool is quite fast - it generated over 600,000 links in less than 7 seconds on a Dual Core MacBook Pro with 16GB RAM.
 
-_Important: please note that the generated links will only work if you project is set public (figure 1). For private projects you can only create passes via the API or Admin Portal._
+_Important: please note that the generated links will only work if you project is set private (figure 1). 
 
 ## How to use (TDLR):
 * Either compile (`go build src/main.go`) yourself or download any of the pre-compiled executables from the `bin` folder (you may need to `chmod 755` to run it).
@@ -20,7 +20,7 @@ _Important: please note that the generated links will only work if you project i
 
 ## Images
 Figure 1:
-![Figure 1](https://passkit.com/images/github/passkit-public-setting.png "PassKit Project Settings")
+![Figure 1](https://passkit.com/images/github/passkit-private-setting.png "PassKit Project Settings")
 
 Figure 2:
 ![Figure 2](https://passkit.com/images/github/passkit-key.png "PassKit Distribution Settings - Project Key")
