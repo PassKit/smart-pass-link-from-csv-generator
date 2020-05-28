@@ -31,10 +31,6 @@ pass links at scale without the need for Developer Resources or the need to impl
 
 ## How to use:
 * Download any of the pre-compiled executables from the `bin` folder for your Operating System (you may need to set the right system permissions to run it).
-* Set your project to private (public projects do not work with SmartPass links):
-
-![Project Settings](/images/project-settings.png)
-
 * Get your Project URL: copy from Distribution >> SmartPass Settings in PassKit IO Portal:
 
 ![Project URL](/images/project-url.png)
@@ -61,6 +57,7 @@ The tool generates 1M pass links in under 10 seconds (on a MacBook Pro DualCore 
 The following fields are currently supported. These are the field names to use as headers in your CSV. For additional details check the [documentation](https://docs.passkit.io/).
 
 **You only need to provide the fields that are applicable to your project. All fields are optional, unless set as required in project.**
+
 ### Generic Fields
 * `universal.optIn`: true -or false.
 * `universal.expiryDate`: expiry date in valid ISO-8601 format (2020-06-22T00:00:00-05:00).
