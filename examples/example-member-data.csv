@@ -1,20 +1,3 @@
-﻿person.displayName,person.emailAddress,members.member.externalId,members.tier.name,members.member.points
-Patrick,patrick@passkit.com,5197353159,tier_2_test,4499
-Paul,paul@passkit.com,1144162438,tier_2_test,6216
-Nick,nick@passkit.com,2393143824,tier_2_test,8615
-Doron,doron@passkit.com,9221382193,tier_2_test,775
-Patrick,patrick@passkit.com,7026223667,tier_2_test,2674
-Danny,danny@passkit.com,7435777951,tier_2_test,4074
-Paul,paul@passkit.com,7153676628,tier_2_test,4231
-Nick,nick@passkit.com,4846523053,tier_2_test,6217
-Patrick,patrick@passkit.com,5413119962,tier_2_test,3243
-Nick,nick@passkit.com,2279250821,tier_2_test,4659
-Danny,danny@passkit.com,1341974216,tier_2_test,7034
-Paul,paul@passkit.com,4229258992,tier_2_test,9047
-Danny,danny@passkit.com,752170706,tier_2_test,9579
-Danny,danny@passkit.com,658167190,tier_2_test,1203
-Patrick,patrick@passkit.com,9108666682,tier_2_test,1021
-Patrick,patrick@passkit.com,2633506293,tier_2_test,1610
-Midori,midori@passkit.com,383133041,tier_2_test,3189
-Jesse,jesse@passkit.com,8785340552,tier_2_test,1192
-Danny,danny@passkit.com,5695793516,tier_2_test,6035
+universal.optIn,universal.expiryDate,person.surname,person.forename,person.otherNames,person.salutation,person.suffix,person.displayName,person.gender,person.dateOfBirth,person.emailAddress,person.mobileNumber,person.externalId,members.tier.name,members.member.externalId,members.member.points,members.member.tierPoints,members.member.secondaryPoints,members.member.groupingIdentifier,members.member.profileImage,meta.customField,utm_source,utm_medium,utm_name,utm_term,utm_content
+TRUE,2021-06-22T23:59:00-05:00,Kosterman,Patrick,,Mr,,Patrick Kosterman,male,1986-06-22,patrick@passkit.com,,ABC,blue,ABC,1000,10,200,AZSD,https://passkit.com/images/patrick-passkit@2x.jpg,My custom value,facebook,social,,,
+FALSE,2021-06-22T23:59:00-05:00,Tomes,Paul,,Mr,,Paul Tomes,male,1971-08-05,paul@passkit.com,,DEF,blue,DEF,2000,20,400,AZSD,https://passkit.com/images/paul-passkit@2x.jpg,My custom value,instagram,social,,,

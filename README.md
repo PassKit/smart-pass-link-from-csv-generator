@@ -43,7 +43,7 @@ pass links at scale without the need for Developer Resources or the need to impl
 
 ![Project Encryption Key](/images/project-key.png)
 
-* Create your CSV file (you can find samples in the [examples](/examples) folder).
+* Create your CSV file (you can find samples in the [examples](/examples) folder; just delete the columns that you don't need).
 * Ensure the CSV file contains the correct [headers](#available-field-names) (otherwise we won't be able to map it to the correct pass field).
 * Run the tool from the command-line: `./encrypted-link-generator-osx -in in.csv -out out.csv -url https://pskt.io/c/wrsynr -key f33332e108e3e5e040924d7dd7651f6f54b242525bf4e8733ea12ac3538af755` (replace values with your own).
 * Open up `out.csv`, test and distribute your links.
@@ -102,7 +102,7 @@ The following fields are currently supported. These are the field names to use a
 * `utm_content`: used for A/B testing and content-targeted ads. Use content to differentiate ads or links that point to the same URL.
 
 ## Examples
-Example CSV files with all supported field names are found in the [examples](/examples) folder in this repo.
+Example CSV files with all supported field names are found in the [examples](/examples) folder in this repo; just delete the columns that you don't need.
 
 ## PassKit Portal
 The [https://app.passkit.com](https://app.passkit.com) allows you to easily design loyalty cards, membership cards and coupons for both Apple Wallet and Google Pay. 
