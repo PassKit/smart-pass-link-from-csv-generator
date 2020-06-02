@@ -69,7 +69,7 @@ The following fields are currently supported. These are the field names to use a
 * `person.salutation`: salutation or title.
 * `person.suffix`: suffix. For multiple suffixes, separate with spaces.
 * `person.displayName`: if required, a string representing the user's preferred designation.
-* `person.gender`: gender, as per government issued id. Possible values: `NOT_KNOWN`, `MALE` or `FEMALE`
+* `person.gender`: gender, as per government issued id. Possible values: `0` (Not known), `1` (Male) or `2` (Female)
 * `person.dateOfBirth`: valid date in yyyy-mm-dd format (1980-06-22).
 * `person.emailAddress`: valid email address.
 * `person.mobileNumber`: valid telephone number.
@@ -97,6 +97,64 @@ The following fields are currently supported. These are the field names to use a
 * `utm_name`: used for keyword analysis. Use campaign to identify a specific product promotion or strategic campaign.
 * `utm_term`: used for paid search. Use term to note the keywords for the ad that led to the pass.
 * `utm_content`: used for A/B testing and content-targeted ads. Use content to differentiate ads or links that point to the same URL.
+
+### Location Parameters
+Used to embed locations on a pass level. Each unique pass can have upto 10 different locations embedded in it.
+
+_LOCATION_NUMBER needs to be 1-10_:
+
+* `location[LOCATION_NUMBER].lat`: a valid float for the location latitude, for example 51.507351.
+* `location[LOCATION_NUMBER].lon`: a valid float for the location longitude, for example 1.507351.
+* `location[LOCATION_NUMBER].lockScreenMessage`: the message to trigger on the lock-screen when someone is within range of the lat/lon.
+* `location[LOCATION_NUMBER].alt`: a valid integer for the location altitude, for example 647 (optional).
+* `location[LOCATION_NUMBER].name`: an internal name for the location in the PassKit database (optional).
+* `location[LOCATION_NUMBER].position`: the position of the location in the locations array (optional).
+
+_When using the above, lat, lon & lock-screen message are mandatory: all 3 need to be provided for each location._
+
+### Beacon Parameters
+Used to embed beacons on a pass level (Apple Wallet only). Each unique pass can have upto 10 different beacons embedded in it.
+
+_BEACON_NUMBER needs to be 1-10_:
+
+* `beacon[BEACON_NUMBER].uuid`: a valid UUID string for the beacon.
+* `beacon[BEACON_NUMBER].major`: a valid integer for beacon major. Range between 0-65535.
+* `beacon[BEACON_NUMBER].minor`: a valid integer for beacon minor. Range between 0-65535.
+* `beacon[BEACON_NUMBER].lockScreenMessage`: the message to trigger on the lock-screen when someone is within range of the beacon.
+* `beacon[BEACON_NUMBER].name`: an internal name for the beacon in the PassKit database (optional).
+* `beacon[BEACON_NUMBER].position`: the position of the beacon in the beacons array (optional).
+
+_When using the above, uuid, major, minor & lock-screen message are mandatory: all 4 need to be provided for each beacon._
+
+### Color Parameters
+Used to override colors on a pass level.
+
+* `colors.backgroundColor`: pass background color.
+* `colors.labelColor`: label text color (Apple Wallet only).
+* `colors.textColor`: value text color (Apple Wallet only).
+* `colors.stripColor`: text over Strip Image color (Apple Wallet only).
+
+### Image Parameters
+Used to override images on a pass level. Need to contain a valid [https://docs.passkit.io/common/images/#operation/createImages](PassKit 22 character image ID).
+
+* `images.icon`
+* `images.logo`
+* `images.appleLogo`
+* `images.hero`
+* `images.eventStrip`
+* `images.strip`
+* `images.thumbnail`
+* `images.background`
+* `images.footer`
+* `images.security`
+* `images.thumbnail`
+* `images.privilige`
+* `images.airlineAlliance`
+* `images.personalization`
+* `images.banner`
+* `images.message`
+* `images.profile`
+* `images.appImage`
 
 ## Examples
 Example CSV files with all supported field names are found in the [examples](/examples) folder in this repo; just delete the columns that you don't need.
