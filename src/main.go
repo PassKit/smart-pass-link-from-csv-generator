@@ -95,7 +95,7 @@ func main() {
 		}
 		record := map[string]string{}
 		for i, fieldValue := range rec {
-			record[fields[i]] = fieldValue
+			record[fields[i]] = strings.TrimSpace(fieldValue)
 		}
 		records++
 		jsonBytes, err := json.Marshal(record)
