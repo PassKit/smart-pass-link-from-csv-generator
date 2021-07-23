@@ -76,7 +76,7 @@ The following fields are currently supported. These are the field names to use a
 * `person.externalId`: external ID for the person. Used for some of the native PassKit integrations.
 
 ### Member Specific Fields
-* `members.tier.name`: the tier ID to enrol the member into.
+* `members.tier.id`: the tier ID to enrol the member into.
 * `members.member.externalId`: sets the 'external' ID of the member (i.e. the member ID as it's being used in your system). If provided then this can be used to query & update members. This field will be treated as unique within the program, and cannot be updated at a later stage.
 * `members.member.points`: primary points balance of the member.
 * `members.member.tierPoints`: tier points for the member.
