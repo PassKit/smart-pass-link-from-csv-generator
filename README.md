@@ -33,11 +33,11 @@ pass links at scale without the need for Developer Resources or the need to impl
 * Download any of the pre-compiled executables from the `bin` folder for your Operating System (you may need to set the right system permissions to run it).
 * Get your Project URL: copy from Distribution >> SmartPass Settings in PassKit IO Portal:
 
-![Project URL](/images/project-url.png)
+![Project URL](https://github.com/user-attachments/assets/09929c39-0fec-4dc2-94c0-dfb0286b0aa6)
 
 * Get your Project Encryption Key: copy from Distribution >> SmartPass Settings in PassKit IO Portal:
 
-![Project Encryption Key](/images/project-key.png)
+![Project Encryption Key](https://github.com/user-attachments/assets/d8162225-439f-4986-a2cf-066d24eb26c3)
 
 * Create your CSV file (you can find samples in the [examples](/examples) folder; just delete the columns that you don't need).
 * Ensure the CSV file contains the correct [headers](#available-field-names) (otherwise we won't be able to map it to the correct pass field).
