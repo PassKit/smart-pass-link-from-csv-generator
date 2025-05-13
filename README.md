@@ -1,4 +1,4 @@
-# encrypted-link-generator
+# smartpass-link-generator
 Basic CSV parser that generates encrypted PassKit SmartPass Links from a CSV file. Links are distributed to your customers via your preferred channels. 
 
 **Generation of PassKit SmartPass links is completely free - you can generate as many links as you need**.
@@ -41,11 +41,11 @@ pass links at scale without the need for Developer Resources or the need to impl
 
 * Create your CSV file (you can find samples in the [examples](/examples) folder; just delete the columns that you don't need).
 * Ensure the CSV file contains the correct [headers](#available-field-names) (otherwise we won't be able to map it to the correct pass field).
-* Run the tool from the command-line: `./encrypted-link-generator-osx -in in.csv -out out.csv -url https://pskt.io/c/wrsynr -key f33332e108e3e5e040924d7dd7651f6f54b242525bf4e8733ea12ac3538af755` (replace values with your own).
+* Run the tool from the command-line: `./smartpass-link-gen-osx-apple-silicon -in in.csv -out out.csv -url https://pub1.pskt.io/c/wrsynr -key f33332e108e3e5e040924d7dd7651f6f54b242525bf4e8733ea12ac3538af755` (replace values with your own).
 * Open up `out.csv`, test and distribute your links.
 
 ## Performance
-The tool generates 1M pass links in under 10 seconds (on a MacBook Pro DualCore 16GB RAM).
+The tool generates 1 million pass links in just seconds.
 
 ## Command Parameters
 * `-in`: the path to your CSV file.
